@@ -18,11 +18,11 @@ def update_counts():
     word_count_label.config(text=f"Words: {word_count}")
     sentence_count_label.config(text=f"Sentences: {sentence_count}")
 
-# Create the main window
+
 root = tk.Tk()
 root.title("Word and Sentence Counter")
 
-# Create and place widgets
+
 text_entry = tk.Text(root, height=10, width=40)
 text_entry.pack(padx=10, pady=10)
 
@@ -35,5 +35,5 @@ word_count_label.pack(pady=5)
 sentence_count_label = tk.Label(root, text="Sentences: 0")
 sentence_count_label.pack(pady=5)
 
-# Run the application
+
 root.mainloop()
